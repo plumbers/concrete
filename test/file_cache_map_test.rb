@@ -7,10 +7,10 @@ require 'concrete/file_cache_map'
 class FileCacheMapTest < Test::Unit::TestCase
 
   TestDir = File.dirname(__FILE__)+"/file_cache_map_test/testdir"
- 
+  
   def setup
     FileUtils.rm_r(Dir[TestDir+"/*"])
-    # * doesn't include dot files
+    # * - doesn't include dot files
     FileUtils.rm_r(Dir[TestDir+"/.cache"])
     @cm = Concrete::FileCacheMap.new(".cache", ".test")
   end
