@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'rake/gempackagetask'
 
 GemSpec = Gem::Specification.new do |s|
@@ -26,8 +27,4 @@ Rake::GemPackageTask.new(GemSpec) do |p|
 end
 
 task :default => :package
-
 task :clobber => :clobber_package
-
-
-
