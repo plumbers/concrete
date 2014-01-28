@@ -4,7 +4,7 @@ require 'fileutils'
 
 GemSpec = Gem::Specification.new do |s|
   s.name = "concrete"
-  s.version = "0.2.1"
+  s.version = "0.2.2"
   s.date = Time.now.strftime("%Y-%m-%d")
   s.summary = %q{Concrete is a lightweight, web-based model editor which can be configured for different DSLs}
   s.authors = ["Martin Thiede"]
